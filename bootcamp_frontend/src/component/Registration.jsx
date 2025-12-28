@@ -26,7 +26,7 @@ const Registration = () => {
     e.preventDefault();
     console.log(formData);
 
-    let response = await fetch("http://localhost:5000/api/v1/auth/register", {
+    let response = await fetch("https://bootcamp-frontend.onrender.com/api/v1/auth/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

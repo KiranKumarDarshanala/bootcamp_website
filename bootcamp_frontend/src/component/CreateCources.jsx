@@ -27,7 +27,7 @@ const CreateCources = () => {
   }
   let handleSubmit = async (e) => {
     e.preventDefault();
-    let response = await fetch(`http://localhost:5000/api/v1/bootcamps/${location.state.id}/courses`, {
+    let response = await fetch(`https://bootcamp-frontend.onrender.com/api/v1/bootcamps/${location.state.id}/courses`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -14,7 +14,7 @@ const BootCampProfile = () => {
     let handleDeleteBootCamp = async (id) => {
         console.log(id);
         if (confirm("Confirm again to delete the Boot camp..")) {
-            let result = await fetch(`http://localhost:5000/api/v1/bootcamps/${id}`, {
+            let result = await fetch(`https://bootcamp-frontend.onrender.com/api/v1/bootcamps/${id}`, {
                 method: "DELETE",
                 headers: {
                     "Content-Type": "application/json",

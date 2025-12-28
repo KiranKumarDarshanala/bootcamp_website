@@ -29,7 +29,7 @@ const EditCource = () => {
     e.preventDefault();
     // console.log({ title, duration, price, minimumSkill, image, description, scholarshipAvailable });
 
-    let result = await fetch(`http://localhost:5000/api/v1/courses/${location.state._id}`, {
+    let result = await fetch(`https://bootcamp-frontend.onrender.com/api/v1/courses/${location.state._id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

@@ -28,7 +28,7 @@ const Login = () => {
   }
   let handleSubmit = async (e) => {
     e.preventDefault();
-    let response = await fetch("http://localhost:5000/api/v1/auth/login", {
+    let response = await fetch("https://bootcamp-frontend.onrender.com/api/v1/auth/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -15,7 +15,7 @@ const UserProfile = () => {
 
   useEffect(() => {
     let fetchUserDetails = async () => {
-      let resutl = await fetch("http://localhost:5000/api/v1/auth/me", {
+      let resutl = await fetch("https://bootcamp-frontend.onrender.com/api/v1/auth/me", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
